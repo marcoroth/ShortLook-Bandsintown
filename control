@@ -1,7 +1,7 @@
 Package: ch.marcoroth.shortlook.plugin.contact-photo.bandsintown
 Name: Bandsintown Profile Pictures for ShortLook
 Depends: mobilesubstrate, co.dynastic.ios.tweak.shortlook
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Description: Show Bandsintown artists' profile pictures in ShortLook when you receive a Bandsintown notification!
 Maintainer: Marco Roth
