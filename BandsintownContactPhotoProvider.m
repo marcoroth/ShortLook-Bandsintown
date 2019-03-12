@@ -30,9 +30,8 @@
     UNNotificationContent *content = [notificationRequest content];
     UNNotificationAttachment *attachment = [content attachments][0];
     if (!attachment) return nil;
-    NSString *imageURL = [attachment URL].absoluteString;
-
-    imageURL = [imageURL stringByReplacingOccurrencesOfString:@"file://" withString:@""];
+  
+    NSString *imageURL = [attachment URL].path;
     UIImage *image = [UIImage imageWithContentsOfFile:imageURL];
 
     return [NSClassFromString(@"DDNotificationContactPhotoPromiseOffer") offerInstantlyResolvingPromiseWithPhotoIdentifier:imageURL image:image];
